@@ -50,7 +50,7 @@ hr {
   background-image: -ms-linear-gradient(4deg, #2caab3 0%, #2c8cb3 100%);
 }
 .section-header {
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 .section-header .section-title {
   font-size: 44px;
@@ -162,7 +162,7 @@ color: #FFFFFF;
   margin-top: 32px;
 }
 .navbar.navbar-default .navbar-brand {
-  /* height: auto; */
+  height: 111px;
   /* padding: 22px 15px 21px; */
 }
 @media only screen and (min-width: 768px) {
