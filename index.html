@@ -37,12 +37,12 @@
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
                         <li class="scroll active"><a href="#home">Home</a></li>
-                        <li class="scroll"><a href="#features">Features</a></li>
-                        <li class="scroll"><a href="#about">About</a></li>
-                        <li class="scroll"><a href="#services">Services</a></li>
-                        <li class="scroll"><a href="#portfolio">Portfolio</a></li>
-                        <li class="scroll"><a href="#our-team">Team</a></li>
-                        <li class="scroll"><a href="#pricing">Pricing</a></li>
+                        <li class="scroll"><a href="#features">Workouts</a></li>
+                        <!-- <li class="scroll"><a href="#about">About</a></li> -->
+                        <li class="scroll"><a href="#services">Tracking Statistics</a></li>
+                        <!-- <li class="scroll"><a href="#portfolio">Portfolio</a></li> -->
+                        <!-- <li class="scroll"><a href="#our-team">Team</a></li> -->
+                        <!-- <li class="scroll"><a href="#pricing">Pricing</a></li> -->
                         <li class="scroll"><a href="#contact-us">Contact</a></li>                        
                     </ul>
                 </div>
@@ -96,12 +96,12 @@
                         <div class="media-body">
                             <h4 class="media-heading">Speed Types - KD</h4>
                             <form>
-                                
-                                <label for="pogo">1. Pogo Jumps - 3 x 6-8 reps</label><input type="checkbox" id="pogo" name="pogo" value="Pogo"><br>
-                                
-                                <label for="vehicle2">2. Depth Jump f/b Landing in a split squat stance - 3 x 6-8 reps</label><input type="checkbox" id="vehicle2" name="vehicle2" value="Car"><br>
-                                
-                                <label for="vehicle3">3. Rear foot elevated split squat - 3 x 6-8 reps</label><input type="checkbox" id="vehicle3" name="vehicle3" value="Boat"><br>
+                                <input type="checkbox" id="chk1" name="pogo" value="Pogo">
+                                    <label for="chk1" id="chk1t">1. Pogo Jumps - 3 x 6-8 reps</label><br>
+                                <input type="checkbox" id="chk2" name="vehicle2" value="Car">
+                                    <label for="2"  id="chk2t">2. Depth Jump Landing in split squat stance - 3 x 6-8 reps</label><br>
+                                <input type="checkbox" id="chk3" name="vehicle3" value="Boat">
+                                    <label for="3" id="chk3t">3. Rear foot elevated split squat - 3 x 6-8 reps</label><br>
                                 <!-- <input type="submit" value="Submit"> -->
                               </form>
                         </div>
@@ -112,8 +112,16 @@
                             <i class="fa fa-cogs"></i>
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading">Visual Designing</h4>
-                            <p>Fusce non fermentum mi. Praesent vel lobortis elit. Nulla sodales, risus quis sollicitudin iaculis, felis dolor aliquet purus, eget elementum velit nunc eu dolor.</p>
+                            <h4 class="media-heading">Spring Types - Terrence Ross</h4>
+                            <form>
+                                <input type="checkbox" id="chk4" name="pogo" value="Pogo">
+                                    <label for="4" id="chk4t">1. Dumbbell Jump Squat - 3 x 6-8 reps</label><br>
+                                <input type="checkbox" id="chk5" name="vehicle2" value="Car">
+                                    <label for="5" id="chk5t">2. Explosive Step up - 3 x 6-8 reps</label><br>
+                                <input type="checkbox" id="chk6" name="vehicle3" value="Boat">
+                                    <label for="6" id="chk6t">3. Kettle Bell Swing - 3 x 6-8 reps</label><br>
+                                <!-- <input type="submit" value="Submit"> -->
+                              </form>
                         </div>
                     </div>
 </div>
@@ -123,8 +131,16 @@
                             <i class="fa fa-line-chart"></i>
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading">UI Development</h4>
-                            <p>Fusce non fermentum mi. Praesent vel lobortis elit. Nulla sodales, risus quis sollicitudin iaculis, felis dolor aliquet purus, eget elementum velit nunc eu dolor. </p>
+                            <h4 class="media-heading">Strength Types - Russell Westbrook</h4>
+                            <form>
+                                <input type="checkbox" id="chk7" name="pogo" value="Pogo">
+                                    <label for="7" id="chk7t">1. One Legged lateral hop - 3 x 6-8 reps</label><br>
+                                <input type="checkbox" id="chk8" name="vehicle2" value="Car">
+                                    <label for="8" id="chk8t">2. Depth Drop - 3 x 6-8 reps</label><br>
+                                <input type="checkbox" id="chk9" name="vehicle3" value="Boat">
+                                    <label for="9" id="chk9t">3. Tuck Jumps - 3 x 6-8 reps</label><br>
+                                <!-- <input type="submit" value="Submit"> -->
+                              </form>
                         </div>
                     </div>
 
@@ -133,8 +149,8 @@
                             <i class="fa fa-cloud-upload"></i>
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading">Quality Test</h4>
-                            <p>Fusce non fermentum mi. Praesent vel lobortis elit. Nulla sodales, risus quis sollicitudin iaculis, felis dolor aliquet purus, eget elementum velit nunc eu dolor. </p>
+                            <h4 class="media-heading">Warm Down</h4>
+                            <p>Well done! you are all done for the day. Take some time to do some shooting or relaxed shooting.</p>
                         </div>
                     </div>
                 </div>
@@ -268,8 +284,9 @@
             </div><!--/.row-->    
         </div><!--/.container-->
     </section><!--/#services-->
-
-    <!-- <section id="portfolio">
+    
+<!-- 
+    <section id="portfolio">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title text-center wow fadeInDown">Exercises</h2>
@@ -282,9 +299,9 @@
                     <li><a href="#" data-filter=".designing">Speed Types</a></li>
                     <li><a href="#" data-filter=".mobile">Spring Types</a></li>
                     <li><a href="#" data-filter=".development">Strength Types</a></li>
-                </ul><!--/#portfolio-filter-->
-            </div>
-
+                </ul>/#portfolio-filter
+            </div> -->
+<!-- 
             <div class="portfolio-items">
                 <div class="portfolio-item designing">
                     <div class="portfolio-item-inner">
@@ -292,12 +309,12 @@
                         <div class="portfolio-info">
                             <h3>Pogo Jumps</h3>
                             
-                            <!-- <a class="preview" href="images/portfolio/0.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a> -->
+                            <a class="preview" href="images/portfolio/0.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                             <iframe class="preview" rel="prettyPhoto" width="560" height="315" src="https://www.youtube.com/embed/22Hgs0XvcDs?start=69" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
-                </div><!--/.portfolio-item-->
-
+                </div>/.portfolio-item -->
+<!-- 
                 <div class="portfolio-item mobile development">
                     <div class="portfolio-item-inner">
                         <img class="img-responsive" src="images/portfolio/02.jpg" alt="">
@@ -307,8 +324,8 @@
                             <a class="preview" href="images/portfolio/02.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
-                </div><!--/.portfolio-item-->
-
+                </div>/.portfolio-item -->
+<!-- 
                 <div class="portfolio-item designing">
                     <div class="portfolio-item-inner">
                         <img class="img-responsive" src="images/portfolio/03.jpg" alt="">
@@ -318,8 +335,8 @@
                             <a class="preview" href="images/portfolio/03.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
-                </div><!--/.portfolio-item-->
-
+                </div>/.portfolio-item -->
+<!-- 
                 <div class="portfolio-item mobile">
                     <div class="portfolio-item-inner">
                         <img class="img-responsive" src="images/portfolio/04.jpg" alt="">
@@ -329,8 +346,8 @@
                             <a class="preview" href="images/portfolio/04.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
-                </div><!--/.portfolio-item-->
-
+                </div>/.portfolio-item -->
+<!-- 
                 <div class="portfolio-item designing development">
                     <div class="portfolio-item-inner">
                         <img class="img-responsive" src="images/portfolio/05.jpg" alt="">
@@ -340,8 +357,8 @@
                             <a class="preview" href="images/portfolio/05.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
-                </div><!--/.portfolio-item-->
-
+                </div>/.portfolio-item -->
+<!-- 
                 <div class="portfolio-item mobile">
                     <div class="portfolio-item-inner">
                         <img class="img-responsive" src="images/portfolio/06.jpg" alt="">
@@ -351,8 +368,8 @@
                             <a class="preview" href="images/portfolio/06.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
-                </div><!--/.portfolio-item-->
-
+                </div>/.portfolio-item -->
+<!-- 
                 <div class="portfolio-item designing development">
                     <div class="portfolio-item-inner">
                         <img class="img-responsive" src="images/portfolio/07.jpg" alt="">
@@ -362,8 +379,8 @@
                             <a class="preview" href="images/portfolio/07.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
-                </div><!--/.portfolio-item-->
-
+                </div>/.portfolio-item -->
+<!-- 
                 <div class="portfolio-item mobile">
                     <div class="portfolio-item-inner">
                         <img class="img-responsive" src="images/portfolio/08.jpg" alt="">
@@ -373,10 +390,10 @@
                             <a class="preview" href="images/portfolio/08.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
-                </div><!--/.portfolio-item-->
-            </div>
-        </div><!--/.container-->
-    </section><!--/#portfolio-->
+                </div>/.portfolio-item-->
+            <!-- </div>
+        </div>/.container
+    </section>/#portfolio -->
 
    
    
@@ -466,7 +483,7 @@
         </div>
     </section>/#our-team -->
 
-    <section id="business-stats">
+    <!-- <section id="business-stats">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title text-center wow fadeInDown">Business Stats</h2>
@@ -766,5 +783,36 @@
     <script src="js/jquery.inview.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/custom-scripts.js"></script>
+    <script>
+        
+        chk1.addEventListener('change', function() {
+            chk1t.style.textDecoration = chk1.checked ? 'line-through' : 'none';
+      });
+        chk2.addEventListener('change', function() {
+            chk2t.style.textDecoration = chk2.checked ? 'line-through' : 'none';
+      });
+      chk3.addEventListener('change', function() {
+            chk3t.style.textDecoration = chk3.checked ? 'line-through' : 'none';
+      });
+      chk4.addEventListener('change', function() {
+            chk4t.style.textDecoration = chk4.checked ? 'line-through' : 'none';
+      });
+      chk5.addEventListener('change', function() {
+            chk5t.style.textDecoration = chk5.checked ? 'line-through' : 'none';
+      });
+      chk6.addEventListener('change', function() {
+            chk6t.style.textDecoration = chk6.checked ? 'line-through' : 'none';
+      });
+      chk7.addEventListener('change', function() {
+            chk7t.style.textDecoration = chk7.checked ? 'line-through' : 'none';
+      });
+      chk8.addEventListener('change', function() {
+            chk8t.style.textDecoration = chk8.checked ? 'line-through' : 'none';
+      });
+      chk9.addEventListener('change', function() {
+            chk9t.style.textDecoration = chk9.checked ? 'line-through' : 'none';
+      });
+    </script>
 </body>
+
 </html>
