@@ -795,3 +795,21 @@ margin: 9px auto;
 padding: 7px 0 0;
 }
 }
+
+/* ----------------------------------- CSS Styling for Dynamic Sizing of Youtube Videos ----------------------------------- */
+
+#youtubeContainer {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  border-width: 0px;
+  box-sizing: border-box;
+}
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
