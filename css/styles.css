@@ -282,22 +282,22 @@ color: #FFFFFF;
 }
 #features h2, #portfolio p{ color: #fff;}
 #features {
-  padding: 100px 0;
+  padding: 100px 0px 0px 0px;
   background: #1d1160;
   color: #fff;
 }
 
 #features .media.service-box:first-child {
-  margin-top: 80px;
+  margin-top: 40px;
 }
 #services {
-  padding: 100px 0 75px;
+  padding: 100px 0 50px;
 }
 .media.service-box {
   margin: 25px 0 36px;
 }
 .media.service-box .pull-left {
-  margin-right: 20px;
+  /* margin-right: 20px; */
 }
 .media.service-box .pull-left > i {
   font-size: 62px;
@@ -462,7 +462,7 @@ margin-bottom: 15px;
 #testimonial {
   background: #000000;
   background-size: cover;
-  padding: 100px 0;
+  padding: 65px 0;
   color: #fff;
 }
 #testimonial h4 {
@@ -704,7 +704,7 @@ margin: 0 8px;
   color: #fff;
 }
 #contact-us {
-  padding: 100px 0 10px;
+  padding: 70px 0 50px;
 }
 #contact-us h1,
 #contact-us h2 {
