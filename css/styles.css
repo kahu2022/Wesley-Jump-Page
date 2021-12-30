@@ -162,7 +162,7 @@ color: #FFFFFF;
   margin-top: 32px;
 }
 .navbar.navbar-default .navbar-brand {
-  height: 111px;
+  height: auto;
   /* padding: 22px 15px 21px; */
 }
 @media only screen and (min-width: 768px) {
