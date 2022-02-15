@@ -6,6 +6,7 @@ exports.up = function(knex) {
         table.string('goal') //reason for program
         table.string('type')
         table.string('details')
+        table.string('image')
         table.string('youtube_link')
         table.string('external_resource')
     })

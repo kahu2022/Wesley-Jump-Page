@@ -19,6 +19,12 @@ Internal Back end:
 - Express
 - Knex
 
+## DB Entity Relationship Diagram for First Phase MVP:
+
+- https://dbdiagram.io/d/61ee695e7cf3fc0e7c5b14b4
+
+
+
 ## Charlotte Hornets Color Codes:
 
 HORNETS PURPLE. 
