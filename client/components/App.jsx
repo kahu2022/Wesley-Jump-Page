@@ -1,6 +1,14 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, Component } from 'react'
 
 import { fetchGreetings } from '../api'
+
+import Navigation from './Navigation'
+import Home from './Home'
+import Workout from './Workout'
+import Tracking from './Tracking'
+import Quotes from './Quotes'
+import Video from './Video'
+import Footer from './Footer'
 
 function App () {
   const [messages, setMessages] = useState([])
@@ -12,10 +20,13 @@ function App () {
 
   return (
     <div className='app-container'>
-      <h1 className='app-title'>Hello World!</h1>
-      <ul>
-        {messages.map(m => <li key={m.id}>{m.text} 👋</li>)}
-      </ul>
+      <Navigation />
+      <Home />
+      <Workout />
+      <Tracking />
+      <Quotes />
+      <Video />
+      <Footer />
     </div>
   )
 }
