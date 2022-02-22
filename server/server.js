@@ -2,6 +2,8 @@ const path = require('path')
 const express = require('express')
 
 const helloRoutes = require('./routes/hello')
+const programRoutes = require('./routes/program')
+const userRoutes = require('./routes/user')
 
 const server = express()
 
@@ -9,6 +11,8 @@ server.use(express.static(path.join(__dirname, 'public')))
 server.use(express.json())
 
 server.use('/api/v1/hello', helloRoutes)
+server.use('/api/v1/program', programRoutes)
+server.use('/api/v1/user', userRoutes)
 
 // for browser router (react-router-dom)
 server.get('*', (req, res) => {

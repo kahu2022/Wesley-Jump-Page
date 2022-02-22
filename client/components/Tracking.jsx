@@ -1,6 +1,25 @@
 import React, {useEffect, useState} from 'react'
 
+import { fetchStatistics } from '../api'
+
 function Tracking () {
+
+    const [initTest, setInitTest] = useState()
+    const [midTest, setmidTest] = useState()
+    const [finTest, setfinTest] = useState()
+    const [trgtTest, settrgtTest] = useState()
+    const [statistics, setStatistics] = useState()
+
+    useEffect(() => {
+        fetchStatistics()
+        .then(res => {
+            setInitTest(JSON.parse(res[0].initial_testing))
+            setmidTest(JSON.parse(res[0].mid_testing))
+            setfinTest(JSON.parse(res[0].final_testing))
+            settrgtTest(JSON.parse(res[0].target_values))
+            setStatistics(res)
+        })
+    },[])
 
     return (
         <>
@@ -22,7 +41,7 @@ function Tracking () {
                      </div>
                      <div className="media-body">
                          <h4 className="media-heading" >My Goals</h4>
-                         <p>"To dunk a 10ft Basketball Hoop" - WT</p>
+                         <p>{statistics?.[0].user_goals}</p>
                      </div>
                  </div>
              </div>

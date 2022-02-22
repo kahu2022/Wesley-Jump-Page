@@ -4,11 +4,11 @@ exports.up = function(knex) {
         table.increments('id')
         table.int('user_id')
         table.int('program_id')
-        table.json('user_goals') //obj
-        table.json('initial_testing') //obj
-        table.json('mid_testing') //obj
-        table.json('final_testing') //obj
-        table.json('target_values') //obj
+        table.string('user_goals') //obj
+        table.string('initial_testing') //obj
+        table.string('mid_testing') //obj
+        table.string('final_testing') //obj
+        table.string('target_values') //obj
         table.date('start_date')
         table.date('mid_point_date')
         table.date('end_date')

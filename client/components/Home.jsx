@@ -1,6 +1,17 @@
 import React, {useEffect, useState} from 'react'
 
+import { fetchProgram } from '../api'
+
 function Home () {
+
+    const [program, setProgram] = useState({})
+    
+    useEffect(() => {
+        fetchProgram()
+        .then(res => {
+            setProgram(res[0])
+    })
+    },[])
 
     return (
         <>
@@ -24,8 +35,8 @@ function Home () {
             <div className="container">
                 <div className="row">
                     <div className="col-sm-9">
-                        <h2>Wesley's Jumpman Training Program</h2>
-                        <p>Follow this list of exercises to develop your vertical jump. Make sure to rest effectively to maximise muscle recovery and increase muscular development. In combination with a supporting diet this 6 week training program will increase your vertical jump ability.
+                        <h2>{program.name}</h2>
+                        <p>{program.details}
                         </p>
                     </div>
                     {/* <!-- <div className="col-sm-3 text-right">
