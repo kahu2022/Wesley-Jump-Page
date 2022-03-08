@@ -29,10 +29,35 @@ function getStatistics (db = connection) {
   .select()
 }
 
+function getSessions (db = connection) {
+  return db('session')
+  .select()
+}
+
+function addSession (session, db = connection) {
+  return db('session')
+  .insert(session)
+}
+
+function updateSession (session, db = connection) {
+  return db('session')
+  .where('id', '=', session.id)
+  .update({
+		"status": "Completed",
+		"date": "2022-02-15 15:21:44",
+		"start_time": "2022-02-15 15:21:44",
+		"end_time": "2022-02-15 15:21:44",
+		"reflection": session.reflection
+  })
+}
+
 module.exports = {
   getAllGreetings,
   getPrograminfo,
   getWorkout,
   getStatistics,
-  getUser
+  getUser,
+  getSessions,
+  addSession,
+  updateSession
 }

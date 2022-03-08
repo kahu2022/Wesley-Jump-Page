@@ -1,10 +1,9 @@
-import { ADD_WORKOUT } from '../actions/'
+import { ADD_SESSION } from '../actions/workout'
 
-function workout (state = {}, action) {
+function workout(state = {}, action) {
     switch (action.type) {
-        case ADD_WORKOUT:
-            state = action.workout
-          return state
+        case ADD_SESSION:
+            return action.workout
         default:
             return state
     }

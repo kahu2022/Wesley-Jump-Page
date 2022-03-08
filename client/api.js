@@ -40,3 +40,29 @@ export function fetchStatistics () {
   })
 }
 
+export function fetchSession () {
+  return request
+  .get('/api/v1/session')
+  .then((response) => {
+    return response.body
+  })
+}
+
+export function addSession (session) {
+  return request
+  .post('/api/v1/session')
+  .send(session)
+  .then((response) => {
+    return response.body
+  })
+}
+
+export function updateSession (session) {
+  return request
+  .patch('/api/v1/session')
+  .send(session)
+  .then((response) => {
+    return response.body
+  })
+}
+
