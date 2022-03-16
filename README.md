@@ -50,7 +50,9 @@ GRAY.
 After cloning this repo
 
 ```sh
-cd sweet-as-beers && npm i
+cd Wesley-Jump-Page && npm i
+npx knex run migrate:latest
+npx knex run seed:run
 npm run dev
 ```
 
@@ -58,8 +60,8 @@ npm run dev
 ## Starting place
 
 * All of the React components are in place.
-* You can find the beer data in `data/beers.js`.
-* Redux has been installed, but not yet configured.
-* The `actions` and `reducers` folders have been created, but no actions or reducers have been created yet.
+* You can find the project data in `data/migrations` folder.
+* Redux has been installed.
+* The `actions` and `reducers` folders have been created.
 
 Before we jump into the code editor, let's do some thinking about what we need to accomplish.
