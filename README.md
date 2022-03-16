@@ -1,4 +1,4 @@
-# WELOCOME TO WESLEY'S Jumpman Website - For custom exercise Programs and resources.
+# WELCOME TO WESLEY'S Jumpman Website - For custom exercise Programs and resources.
 
 In this personal project I will be developing an Exercise training Web-application that helps you to build your own personalized training program. Here you can select which program you want to do, set some goals, record your inital results, follow a reccomend set of exercises, check in your sessions, track your progress, record your final results and see how you stacked up against your initial results. Any improvement is awesome so would be great to have an app that can manage and facilitate that process for you from start to finish!
 
@@ -61,6 +61,5 @@ npm run dev
 * You can find the beer data in `data/beers.js`.
 * Redux has been installed, but not yet configured.
 * The `actions` and `reducers` folders have been created, but no actions or reducers have been created yet.
-* The beer listing displays the beers, but the _Add to cart_ link doesn't do anything yet.
 
 Before we jump into the code editor, let's do some thinking about what we need to accomplish.
